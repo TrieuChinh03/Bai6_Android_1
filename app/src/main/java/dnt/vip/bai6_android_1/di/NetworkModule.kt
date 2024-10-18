@@ -20,7 +20,7 @@ object NetworkModule {
             .build()
     }
 
-    //===   Cung cấp đối tượng ApiUserService   ===
+    //===   Cung cấp đối tượng ApiUser   ===
     @Provides
     @Singleton
     fun provideApiUser(retrofit: Retrofit): ApiUser {
