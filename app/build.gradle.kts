@@ -1,6 +1,7 @@
 plugins {
     alias(libs.plugins.android.application)
     alias(libs.plugins.jetbrains.kotlin.android)
+    kotlin("kapt")
 }
 
 android {
@@ -55,8 +56,9 @@ dependencies {
     implementation ("com.squareup.retrofit2:converter-gson:2.9.0")
     implementation ("androidx.recyclerview:recyclerview:1.2.0")
 
-    implementation ("com.github.bumptech.glide:glide:4.15.1")
-    annotationProcessor ("com.github.bumptech.glide:compiler:4.15.1")
+    implementation ("com.github.bumptech.glide:glide:4.16.0")
 
-
+    implementation ("com.google.dagger:dagger:2.52")
+    kapt ("com.google.dagger:dagger-compiler:2.52")
 }
+

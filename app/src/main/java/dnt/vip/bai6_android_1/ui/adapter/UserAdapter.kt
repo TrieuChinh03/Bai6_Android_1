@@ -46,9 +46,9 @@ class UserAdapter : RecyclerView.Adapter<UserAdapter.UserViewHolder>() {
                 .transform(CenterCrop(), RoundedCorners(25))
                 .into(binding.imgAvt)
 
-            binding.tvEmail.text = user.email
-            binding.tvName.text = "${user.name.first} ${user.name.last}"
-            binding.tvPhone.text = user.phone
+            binding.tvEmail.text = "Email: ${user.email}"
+            binding.tvName.text = "Name: ${user.name.first} ${user.name.last}"
+            binding.tvPhone.text = "Phone: ${user.phone}"
         }
     }
 }

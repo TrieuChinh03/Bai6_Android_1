@@ -1,6 +1,6 @@
 package dnt.vip.bai6_android_1.data.model
 
-data class ApiResponse(
+data class UsersResponse(
     val results: List<User>
 )
 
